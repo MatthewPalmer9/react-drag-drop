@@ -1,6 +1,10 @@
 import React from 'react';
 
 export default function Board(props) {
+    
+    // Transfers the card IDs through the event
+    // Gets the element by the ID passed in
+    // Appends it to the board
     const drop = e => {
 
         // Prevents bugs/bad behavior from user interaction
@@ -22,6 +26,7 @@ export default function Board(props) {
     return (
         <div 
             id={props.id} 
+            className="board"
             onDrop={drop} 
             onDragOver={dragOver}
         >
