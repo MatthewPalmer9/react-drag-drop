@@ -12,11 +12,11 @@ export default function Board(props) {
         card.style.display = 'block';
 
         e.target.appendChild(card);
+    }
 
-        const dragOver = e => {
-            // Prevents bugs/bad behavior from user interaction
-            e.preventDefault();
-        }
+    const dragOver = e => {
+        // Prevents bugs/bad behavior from user interaction
+        e.preventDefault();
     }
 
     return (
