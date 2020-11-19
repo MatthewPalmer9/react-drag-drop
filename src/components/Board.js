@@ -2,16 +2,18 @@ import React from 'react';
 
 export default function Board(props) {
     
-    // Transfers the card IDs through the event
+    // Transfers (Drops) the card IDs through the event
     // Gets the element by the ID passed in
     // Appends it to the board
     const drop = e => {
 
         // Prevents bugs/bad behavior from user interaction
         e.preventDefault();
-        // Handles holding the data that is being dragged DURING a drag
-        const card_id = e.dataTransfer.getData('card_id');
 
+        // Handles getting the card data by ID that is being dragged
+        const card_id = e.dataTransfer.getData('card_id'); // card_id === target.id from Card.js 
+        
+        // Grabs the associated DOM element by the card ID
         const card = document.getElementById(card_id);
         card.style.display = 'block';
 
