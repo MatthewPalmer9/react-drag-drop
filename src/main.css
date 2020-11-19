@@ -41,13 +41,3 @@ body {
     text-align: center;
     margin-bottom: 10px;
 }
-
-.task-input {
-    display: flex;
-    justify-content: center;
-    margin: 20px auto 0  auto;
-}
-
-.task-input span {
-    padding-right: 4px;
-}
