@@ -3,11 +3,7 @@ import Board from './components/Board.js';
 import Card from './components/Card.js';
 
 export default class App extends Component {  
-
-  addCard = (e) => {
-    console.log(e);
-  }
-
+  
   render() {
     return (
       <div className="App">
