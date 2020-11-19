@@ -20,7 +20,7 @@ export default function Card(props) {
 
     // for every pixel the data is being dragged over, this function is executed.
     const dragOver = e => {
-        e.target.style.display = "block";
+        // e.target.style.display = "block";
 
         // Set to prevent reference from being called so that cards can't be dropped into cards
         e.stopPropagation();
@@ -34,7 +34,7 @@ export default function Card(props) {
             onDragStart={dragStart}
             onDragOver={dragOver}
         >
-            { props. children }
+            { props.children }
         </div>
     )
 }

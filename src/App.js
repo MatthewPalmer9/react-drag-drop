@@ -15,7 +15,7 @@ export default class App extends Component {
           <Board id="board-1" className="board">
             {/* <p id="unfinished">Unfinished Tasks</p> */}
             <Card id="1" className="card" draggable="true">
-              <p onClick={this.addCard}>Card one</p>
+              <p>Card one</p>
             </Card>
             <Card id="2" className="card" draggable="true">
               <p>Card two</p>
